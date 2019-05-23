@@ -1,0 +1,43 @@
+#include<iostream>
+#include<cstring>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	char message[1000];
+	int i, j, temp, size;
+	
+	cout<<"No. of Array Elements: ";
+	cin>>size;
+	
+	for(i=0; i<size; i++)
+	{
+		cout<<"Character "<<i+1<<": ";
+		cin>>message[i];
+	}
+	
+	
+	j = i -1;
+	i=0;
+	
+	while(i<j)
+	{
+		temp=message[i];
+		message[i] = message[j];
+		message[j] = temp;
+		i++;
+		j--;
+	}
+	
+	cout<<endl<<"ARRAY SIZE: "<<size;
+	cout<<endl<<"REVERSE FORM: ";
+	for(i=0; i<size; i++)
+	{
+		cout<<message[i];
+	}
+	
+
+
+	_getch();
+	return 0;
+}
