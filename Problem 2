@@ -1,0 +1,50 @@
+#include <iostream>
+#include <conio.h>	
+using namespace std;
+int main () 
+{
+	
+	int provinceA[7]; 
+	int provinceB[7]; 
+	int provinceC[7]; 
+	int i, j;
+	       
+	for (i = 1; i <=7; i++ ) 
+	{
+	   	cout<<"Province A, Day " << i << ": ";
+        cin >> provinceA[i];
+   }
+
+	for (i = 1; i <=7; i++ ) 
+	{
+		cout<<"Province B, Day " << i << ": ";
+		cin >> provinceB[i];
+	}
+	   
+	for (i = 1; i <=7; i++ ) 
+	{
+		cout<<"Province C, Day " << i << ": ";
+		cin >> provinceC[i];
+	}
+	   
+	cout  << "\n\nValues Displaying.." << endl;
+	for (j = 1; j <= 7; j++ )
+    { 
+	    cout <<"Province A, Day "<< j <<" = "<< provinceA[j] << endl;
+	}
+	
+	for (j = 1; j <= 7; j++ ) 
+	{
+	    cout <<"Province B, Day "<< j <<" = "<<  provinceB[j]<< endl;
+	}
+	
+	for (j = 1; j <= 7; j++ ) 
+	{
+	    cout <<"Province C, Day "<< j <<" = "<< provinceC[j]<< endl;
+	}
+	 
+	_getch();
+	 return 0;
+	
+}
+
